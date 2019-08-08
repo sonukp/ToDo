@@ -1,0 +1,27 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+
+<h2 style="color:blue;padding:10px">ToDo List</h2>
+
+<table cellpadding="5px" cellspacing="10px">
+    <tr>
+        <th>
+            Task Name
+        </th>
+        <th>
+            #
+        </th>
+    </tr>
+    {% for task in tasks %}
+    <tr>
+        <td>{{ task.title }}</td>
+        <td><a href="{% url 'task_detail' title=task.title %}">View</a></td>
+    </tr>
+    {% endfor %}
+</table>
+<BR/>
+<BR/>
+
+<a href="{% url 'task_new' %}" ><button style="margin:10px;padding:10px;background-color:blue;color:white">Add New Task</button></a>
+{% endblock %}

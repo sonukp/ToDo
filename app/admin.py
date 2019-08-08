@@ -5,8 +5,8 @@ from .models import TodoClass
 
 
 class ToDoClassAdmin(admin.ModelAdmin):
-    list_display = ('title', 'description', 'date_time', 'created', 'status', 'modified', 'is_deleted')
-    list_filter = ('date_time', 'created', 'status', 'is_deleted')
+    list_display = ('pk', 'title', 'description', 'task_time', 'task_date', 'created', 'status', 'modified', 'is_deleted')
+    list_filter = ('task_time', 'task_date', 'created', 'status', 'is_deleted')
     search_fields = ('title', 'description')
     actions = ['download_csv']
 
@@ -18,9 +18,9 @@ class ToDoClassAdmin(admin.ModelAdmin):
 
         f = io.StringIO()
         writer = csv.writer(f)
-        writer.writerow(['title', 'description', 'date_time', 'created', 'status', 'modified', 'is_deleted'])
+        writer.writerow(['pk', 'title', 'description', 'task_time', 'task_date', 'created', 'status', 'modified', 'is_deleted'])
         for s in queryset:
-            writer.writerow([s.title, s.description, s.date_time, s.created, s.status, s.modified, s.is_deleted])
+            writer.writerow([s.title, s.description, s.task_date, s.task_time, s.created, s.status, s.modified, s.is_deleted])
 
         f.seek(0)
         response = HttpResponse(f, content_type='text/csv')

@@ -1,0 +1,19 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+
+<div >
+
+    <a class="btn btn-default" href="{% url 'task_edit' title=task.title %}">Edit</a>
+    <a class="btn btn-default" href="{% url 'task_remove' title=task.title %}">Delete</a>
+    <h2>{{ task.title }}</h2>
+    <p>{{ task.description|linebreaksbr }}</p>
+    <p>{{ task.task_date }}</p>
+    <p>{{ task.task_time }}</p>
+</div>
+
+
+{% endblock %}
+
+
+
