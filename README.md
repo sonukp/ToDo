@@ -8,30 +8,31 @@ To Get start with the app:
 
 2. Requirements: \
    Install the following into packages: \
-   Python (3 and above) , Virtualenv, Django(2.2) \
-   pip install python \
-   pip install virtualenv \
-   pip install django
+   Python (3 and above) , Virtualenv, Django(2.2) 
+   
+   ~pip install python \
+   ~pip install virtualenv \
+   ~pip install django
 
 3. Setup the virtualenv for the project. \
    Make a dir and create virtualenv \
    
-   virtualenv venv_dir
+   ~virtualenv venv_dir
    
    To activate venv type: \
-   source venv_dr/bin/activate ( for linux) \
-   venv_dir\Scripts\activate (for windows)
+   ~source venv_dr/bin/activate ( for linux) \
+   ~venv_dir\Scripts\activate (for windows)
 
 4. Configure migration for the project: \
-   python manage.py makemigrations \
-   python manage.py migrate 
+   ~python manage.py makemigrations \
+   ~python manage.py migrate 
 
 5. Create a superuser to access admin interface: \
-   python manage.py createsuperuser \
+   ~python manage.py createsuperuser \
    **(give username and password)** 
 
 6. Run the server: \
-   Python manage.py runserver 
+   ~python manage.py runserver 
 
    **Copy the server url (http://127.0.0.1:8000) and open in your browser** 
 
