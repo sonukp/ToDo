@@ -22,7 +22,7 @@ To Get start with the app:
    **(give username and password)** 
 
 6. Run the server: \
-   Python manage.py runserver \
+   Python manage.py runserver 
 
    **Copy the server url (http://127.0.0.1:8000) and open in your browser** 
 
@@ -30,7 +30,7 @@ To Get start with the app:
    http://127.0.0.1:8000/                  **To view the main page** \
    http://127.0.0.1:8000/admin             **To access admin interface** \
    http://127.0.0.1:8000/add               **To add new task to the list** \
-   http://127.0.0.1:8000/<task_title>      **To view the single task, edit and delete the task** \
+   http://127.0.0.1:8000/<task_title>      **To view the single task, edit and delete the task** 
 
    http://127.0.0.1:8000/api               **API to view all the list** \
    http://127.0.0.1:8000/api/<task_title>  **API to view specific task** 
