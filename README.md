@@ -7,13 +7,22 @@ To Get start with the app:
 1. Download/Clone the app in your system.
 
 2. Requirements: \
-   Python (3 and above)\
-   Virtualenv \
-   Django(2.2) 
+   Install the following into packages: \
+   Python (3 and above) , Virtualenv, Django(2.2) \
+   pip install python \
+   pip install virtualenv \
+   pip install django
 
-3. Setup the virtualenv for the project.
+3. Setup the virtualenv for the project. \
+   Make a dir and create virtualenv \
+   
+   virtualenv venv_dir
+   
+   To activate venv type: \
+   source venv_dr/bin/activate ( for linux) \
+   venv_dir\Scripts\activate (for windows)
 
-4. Configure migration file for the project: \
+4. Configure migration for the project: \
    python manage.py makemigrations \
    python manage.py migrate 
 
