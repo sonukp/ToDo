@@ -6,10 +6,10 @@ To Get start with the app:
 
 1. Download/Clone the app in your system.
 
-2. Requirements: 
-   Python (3 and above)
-   Virtualenv
-   Django(2.2)
+2. Requirements: __
+   Python (3 and above)__
+   Virtualenv__
+   Django(2.2)__
 
 3. Setup the virtualenv for the project.
 
